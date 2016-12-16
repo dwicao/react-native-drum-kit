@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-  	marginVertical: Style.UNIT,
+  	marginTop: Style.UNIT,
   },
 
   titleText: {
@@ -105,13 +105,14 @@ const styles = StyleSheet.create({
 
   drumKit: {
   	flex: 1,
+  	alignItems: 'center',
   	flexDirection: 'row',
   },
 
   drumButton: {
    	alignItems: 'center',
    	justifyContent: 'center',
-  	height: Style.CARD_HEIGHT * 0.85,
+  	height: Style.CARD_HEIGHT * 0.65,
    	margin: Style.UNIT * 0.2,
     borderWidth: Style.UNIT * 0.4,
     borderRadius: 5,
