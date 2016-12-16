@@ -23,37 +23,46 @@ export default class DrumKit extends Component {
 	    	<View style={styles.col}>
 					 <DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='SNARE' />
+					 	text='SNARE'
+					 	source='snare.wav' />
 					<DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='OPENHAT' />
+					 	text='OPENHAT'
+					 	source='openhat.wav' />
 					<DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='HIHAT' />
+					 	text='HIHAT'
+					 	source='hihat.wav' />
 				 </View>
 
 				 <View style={styles.col}>
 			    <DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='KICK' />
+					 	text='KICK'
+					 	source='kick.wav' />
 					<DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='TOM' />
+					 	text='TOM'
+					 	source='tom.wav' />
 					<DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='TICK' />
+					 	text='RIDE'
+					 	source='ride.wav' />
 				 </View>
 
 				 <View style={styles.col}>
 			    <DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='CLAP' />
+					 	text='CLAP'
+					 	source='clap.wav' />
 					<DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='DRUM' />
+					 	text='TINK'
+					 	source='tink.wav' />
 					<DrumButton style={styles.drumButton}
 					 	styleText={styles.text}
-					 	text='BOOM' />
+					 	text='BOOM'
+					 	source='boom.wav' />
 				 </View>
 				</View>
 
@@ -105,7 +114,7 @@ const styles = StyleSheet.create({
   	height: Style.CARD_HEIGHT * 0.85,
    	margin: Style.UNIT * 0.2,
     borderWidth: Style.UNIT * 0.4,
-    borderRadius: 10,
+    borderRadius: 5,
     borderColor: '#333333',
    	backgroundColor: 'gray',
   },

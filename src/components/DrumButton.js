@@ -5,6 +5,7 @@ import {
 	Alert,
 } from 'react-native';
 import Button from 'react-native-button';
+import Sound from 'react-native-sound';
 
 export default class DrumButton extends Component {
 	constructor() {
@@ -14,7 +15,13 @@ export default class DrumButton extends Component {
 	}
 
 	onButtonPress() {
-		Alert.alert(`Tolong jangan pencet aku :')`);
+		const audio = new Sound(this.props.source, Sound.MAIN_BUNDLE, (e) => {
+      if (e) {
+        console.log('error', e);
+      } else {
+        audio.play(() => audio.release());
+      }
+    });
 	}
 
 	render() {
