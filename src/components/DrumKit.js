@@ -3,22 +3,12 @@ import {
 	StyleSheet,
 	View,
 	Text,
-	Alert,
 } from 'react-native';
 import Button from 'react-native-button';
+import Style from '../utils/Style';
 import DrumButton from './DrumButton';
 
 export default class DrumKit extends Component {
-	constructor() {
-		super();
-
-		this.onButtonPress = this.onButtonPress.bind(this);
-	}
-
-	onButtonPress() {
-		Alert.alert('oh kucing :)');
-	}
-
   render() {
     return (
     	<View style={styles.container}>
@@ -80,11 +70,11 @@ const styles = StyleSheet.create({
   },
 
   title: {
-  	marginVertical: 20,
+  	marginVertical: Style.UNIT,
   },
 
   titleText: {
-  	fontSize: 30,
+  	fontSize: Style.UNIT * 2,
   	color: 'white',
   	textShadowRadius: 10,
   	textShadowColor: 'black',
@@ -97,8 +87,8 @@ const styles = StyleSheet.create({
   },
 
   text: {
+  	fontSize: Style.UNIT * 1.3,
   	color: 'white',
-  	fontSize: 18,
   	textShadowRadius: 20,
   	textShadowColor: 'yellow',
   	textShadowOffset: {width: 1, height: 1},
@@ -110,11 +100,11 @@ const styles = StyleSheet.create({
   },
 
   drumButton: {
-  	height: 140,
    	alignItems: 'center',
    	justifyContent: 'center',
-   	margin: 5,
-    borderWidth: 4,
+  	height: Style.CARD_HEIGHT * 0.85,
+   	margin: Style.UNIT * 0.2,
+    borderWidth: Style.UNIT * 0.4,
     borderRadius: 10,
     borderColor: '#333333',
    	backgroundColor: 'gray',

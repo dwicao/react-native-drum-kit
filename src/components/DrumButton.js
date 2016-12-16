@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import {
-	StyleSheet,
 	View,
 	Text,
 	Alert,
@@ -15,7 +14,7 @@ export default class DrumButton extends Component {
 	}
 
 	onButtonPress() {
-		Alert.alert('oh kucing :)');
+		Alert.alert(`Tolong jangan pencet aku :')`);
 	}
 
 	render() {
