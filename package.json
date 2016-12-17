@@ -1,5 +1,5 @@
 {
-  "name": "DrumKit",
+  "name": "drumkit",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "signer": "cd android/app/build/outputs/apk/ && jarsigner -verbose -keystore ~/.android/debug.keystore -storepass android -keypass android app-release-unsigned.apk androiddebugkey",
     "build": "cd android/ && ./gradlew assembleDebug",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "android-dev": "adb uninstall com.home && react-native run-android && adb reverse tcp:8081 tcp:8081 && react-native start",
+    "android-dev": "adb uninstall com.dwicao.drumkit && react-native run-android && adb reverse tcp:8081 tcp:8081 && react-native start",
     "bundle-android": "react-native bundle --platform android --dev false --entry-file ./index.android.js --bundle-output ./android/app/src/main/assets/index.android.bundle --sourcemap-output ./android/app/src/main/assets/index.android.map --assets-dest ./android/app/src/main/res/"
   },
   "dependencies": {

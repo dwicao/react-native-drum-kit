@@ -1,9 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import {
-	StyleSheet,
 	View,
 	Text,
-	Alert,
 } from 'react-native';
 import Button from 'react-native-button';
 import Sound from 'react-native-sound';
@@ -59,7 +57,7 @@ DrumButton.defaultProps = {
   	textShadowColor: 'yellow',
   	textShadowOffset: {width: 1, height: 1},
 	},
-}
+};
 
 
 DrumButton.propTypes = {
@@ -67,4 +65,4 @@ DrumButton.propTypes = {
 	styleText: PropTypes.object,
 	text: PropTypes.string.isRequired,
 	source: PropTypes.string.isRequired,
-}
+};

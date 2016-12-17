@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('Home', () => Home);
+AppRegistry.registerComponent('drumkit', () => Home);

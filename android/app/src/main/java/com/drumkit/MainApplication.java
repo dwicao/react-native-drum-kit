@@ -1,4 +1,4 @@
-package com.home;
+package com.dwicao.drumkit;
 
 import android.app.Application;
 import android.util.Log;
