@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import {
 	View,
 	Text,
+	TouchableOpacity,
 } from 'react-native';
-import Button from 'react-native-button';
 import Sound from 'react-native-sound';
 import Style from '../utils/Style';
 
@@ -26,13 +26,15 @@ export default class DrumButton extends Component {
 
 	render() {
 		return (
-			<Button onPress={this.onButtonPress}>
-		  	<View style={this.props.style}>
-		  		<Text style={this.props.styleText}>
-		  			{this.props.text}
-		  		</Text>
-		  	</View>
-			</Button>
+			<TouchableOpacity
+				activeOpacity={0.4}
+				onPress={this.onButtonPress}>
+			  	<View style={this.props.style}>
+			  		<Text style={this.props.styleText}>
+			  			{this.props.text}
+			  		</Text>
+			  	</View>
+			</TouchableOpacity>
 		);
 	}
 }

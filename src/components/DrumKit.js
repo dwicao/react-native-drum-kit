@@ -3,8 +3,8 @@ import {
 	StyleSheet,
 	View,
 	Text,
+  StatusBar,
 } from 'react-native';
-import Button from 'react-native-button';
 import DrumButton from './DrumButton';
 import Style from '../utils/Style';
 
