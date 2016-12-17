@@ -45,16 +45,16 @@ DrumButton.defaultProps = {
   	height: Style.CARD_HEIGHT * 0.65,
    	margin: Style.UNIT * 0.2,
     borderWidth: Style.UNIT * 0.4,
-    borderRadius: 5,
-    borderColor: '#333333',
-   	backgroundColor: 'gray',
+    borderColor: '#508356',
+   	backgroundColor: '#9bd662',
 	},
 
 	styleText: {
   	fontSize: Style.UNIT * 1.3,
-  	color: 'white',
-  	textShadowRadius: 20,
-  	textShadowColor: 'yellow',
+  	fontWeight: 'bold',
+  	color: '#3a313e',
+  	textShadowRadius: 5,
+  	textShadowColor: '#508356',
   	textShadowOffset: {width: 1, height: 1},
 	},
 };

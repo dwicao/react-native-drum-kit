@@ -49,17 +49,23 @@ const styles = StyleSheet.create({
   	flex: 1,
   	alignItems: 'center',
   	flexDirection: 'column',
+    backgroundColor: '#feffc0',
   },
 
   title: {
-  	marginTop: Style.UNIT,
+    flex: 1,
+    backgroundColor: '#3a313e',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 
   titleText: {
+    flex: 1,
+    textAlign: 'center',
   	fontSize: Style.UNIT * 2,
-  	color: 'white',
-  	textShadowRadius: 10,
-  	textShadowColor: 'black',
+  	color: '#feff91',
+  	textShadowRadius: 5,
+  	textShadowColor: '#feff91',
   	textShadowOffset: {width: 1, height: 1},
   },
 
@@ -69,8 +75,10 @@ const styles = StyleSheet.create({
   },
 
   content: {
-  	flex: 1,
-  	alignItems: 'center',
+    flex: 2,
+    marginVertical: Style.UNIT,
+    marginHorizontal: Style.UNIT * 0.2,
+    alignItems: 'flex-end',
   	flexDirection: 'row',
   },
    
