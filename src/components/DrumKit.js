@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    flex: 1,
+    flex: 2,
     backgroundColor: '#3a313e',
     flexDirection: 'row',
     alignItems: 'center',
@@ -75,10 +75,9 @@ const styles = StyleSheet.create({
   },
 
   content: {
-    flex: 2,
-    marginVertical: Style.UNIT,
+    flex: 6,
     marginHorizontal: Style.UNIT * 0.2,
-    alignItems: 'flex-end',
+    alignItems: 'center',
   	flexDirection: 'row',
   },
    
