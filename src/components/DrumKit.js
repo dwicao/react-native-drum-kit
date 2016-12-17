@@ -12,7 +12,7 @@ export default class DrumKit extends Component {
   render() {
     return (
     	<View style={styles.container}>
-	    	
+	    	<StatusBar backgroundColor={'#3a313e'} />
     		<View style={styles.title}>
     			<Text style={styles.titleText}>
     				DrumKit
@@ -49,12 +49,11 @@ const styles = StyleSheet.create({
   	flex: 1,
   	alignItems: 'center',
   	flexDirection: 'column',
-    backgroundColor: '#feffc0',
+    backgroundColor: '#3a313e',
   },
 
   title: {
     flex: 2,
-    backgroundColor: '#3a313e',
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -76,9 +75,10 @@ const styles = StyleSheet.create({
 
   content: {
     flex: 6,
-    marginHorizontal: Style.UNIT * 0.2,
+    paddingHorizontal: Style.UNIT * 0.2,
     alignItems: 'center',
   	flexDirection: 'row',
+    backgroundColor: '#feffc0',
   },
    
 });
