@@ -46,7 +46,7 @@ DrumButton.defaultProps = {
    	justifyContent: 'center',
   	height: Style.CARD_HEIGHT * 0.65,
    	margin: Style.UNIT * 0.2,
-    borderWidth: Style.UNIT * 0.4,
+    borderWidth: 5,
     borderColor: '#508356',
    	backgroundColor: '#9bd662',
 	},

@@ -9,22 +9,17 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput,
+  Slider
 } from 'react-native';
+import DrumKit from './src/components/DrumKit';
 
 export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Selamat Datang Lutfi!
-        </Text>
-        <Text style={styles.instructions}>
-          React Native Emang Keren!
-        </Text>
-        <Text style={styles.instructions}>
-          Tekan R dua kali untuk reload,{'\n'}
-        </Text>
+        <DrumKit />
       </View>
     );
   }
@@ -33,20 +28,11 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    backgroundColor: '#F5FCFF'
+  }
+
 });
 
-AppRegistry.registerComponent('Home', () => Home);
+AppRegistry.registerComponent('drumkit', () => Home);
