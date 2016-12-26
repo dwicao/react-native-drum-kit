@@ -12,7 +12,7 @@ Type following command :
 You must have ANDROID_HOME environtment variable, to check if you already have, type in your terminal:  
 > echo $ANDROID_HOME  
 
-If blank, you can read at HERE,
+If blank, you can read at [HERE](https://goo.gl/XSBmwE)
 
 In your terminal type this to make sure react-native know RNSound module:  
 > react-native link
