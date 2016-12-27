@@ -3,6 +3,7 @@ import {
 	StyleSheet,
 	View,
 	Text,
+  Platform,
   StatusBar,
 } from 'react-native';
 import DrumButton from './DrumButton';
@@ -12,7 +13,7 @@ export default class DrumKit extends Component {
   render() {
     return (
     	<View style={styles.container}>
-	    	<StatusBar backgroundColor={'#3a313e'} />
+        <StatusBar translucent={true} backgroundColor={'#3a313e'} />
     		<View style={styles.title}>
     			<Text style={styles.titleText}>
     				DrumKit
@@ -47,6 +48,7 @@ export default class DrumKit extends Component {
 const styles = StyleSheet.create({
   container: {
   	flex: 1,
+    marginTop: 20,
   	alignItems: 'center',
   	flexDirection: 'column',
     backgroundColor: '#3a313e',

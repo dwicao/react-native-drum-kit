@@ -1,9 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
+import codePush from "react-native-code-push";
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -16,6 +11,10 @@ import {
 import DrumKit from './src/components/DrumKit';
 
 export default class Home extends Component {
+  componentDidMount() {
+    codePush.sync({installMode: codePush.InstallMode.IMMEDIATE});
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -30,9 +29,9 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#feffc0',
   }
 
 });
 
-AppRegistry.registerComponent('drumkit', () => Home);
+AppRegistry.registerComponent('drumkit', () => codePush(Home) );

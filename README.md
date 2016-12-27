@@ -17,6 +17,14 @@ If blank, you can read at [HERE](https://goo.gl/XSBmwE)
 In your terminal type this to make sure react-native know RNSound module:  
 > react-native link
 
+Create new file at `react-native-redux-weather-map/android/gradle.properties` and fill with this lines of code :  
+
+```
+android.useDeprecatedNdk=true
+CODEPUSH_DEBUG_KEY = "insert_your_code_here"
+CODEPUSH_RELEASE_KEY = "insert_your_code_here"
+```
+
 At this point, you should be able to run the project.
 To run your project on your device/emulator at Debug configuration, type:
 > npm run android-dev
