@@ -16,7 +16,7 @@ export default class DrumKit extends Component {
         <StatusBar translucent={true} backgroundColor={'#3a313e'} />
     		<View style={styles.title}>
     			<Text style={styles.titleText}>
-    				DrumKit
+    				Drum Kit
     			</Text>
     		</View>
 
