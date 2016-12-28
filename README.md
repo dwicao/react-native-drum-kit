@@ -1,6 +1,6 @@
 # React Native Drum Kit  
 
-![demo](https://raw.githubusercontent.com/react-native-drum-kit/master/demo.png) 
+![demo](https://github.com/dwicao/react-native-drum-kit/raw/master/demo.png) 
 
 ## Download  
 [drumkit.apk](https://github.com/dwicao/react-native-drum-kit/releases/download/v1.0/drumkit.apk)
